@@ -1,0 +1,16 @@
+@import './config.css';
+
+body.dark{
+    background-image: var(--bg-dark-mode);
+}
+
+h2.dark{
+    color: var(--title-text-dark);
+}
+
+.taskList-container.dark li, .input-wrapper.dark{
+    background-color: var(--bg-box-dark);   
+    box-shadow: 7px 7px 15px #1E1E1E;
+    border-top: 2px solid #9B9B9B4b;
+    color: var(--text-dark);
+}

@@ -1,0 +1,145 @@
+@import './config.css';
+@import './dark-mode.css';
+body{
+    background-color: rgba(196, 196, 196, 1);
+    font-family: var(--font-roboto);
+    background: var(--bg-radial);
+    color: var(--color-text);
+
+    transition: background 0.2s linear;
+}
+h2{
+    font-family: var(--font-kumbh);
+    color: var(--title);
+    font-size: 5rem;
+}
+h2 span.month{
+    color: var(--color-span);
+}
+.input-wrapper input{
+    background: transparent;
+    color: var(--color-text);
+    width: 95%;
+    padding: .5rem;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* checkbox dark-mode */
+header img{
+    width: 1.8rem;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.label {
+    padding: .5rem;
+    margin: .3rem;
+    background-color: var(--title);
+    border-radius: 5rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    height: 2.6rem;
+    width: 5.1rem;
+}
+.label .ball{
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: .25rem;
+    left: .3rem;
+
+    height: 2rem;
+    width: 2rem;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(23px);
+}
+/* checkbox dark-mode */
+
+.todoContainer{
+    width: 60vw;
+    height: 25vh;   
+    margin: 5% auto;
+    text-align: center;
+}
+
+.taskList-container{
+    text-align: justify;
+    font-size: 1.4rem;
+}
+.taskList-container li{
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.taskList-container li, .input-wrapper{
+    background-color: var(--bg-box);   
+    box-shadow: 7px 7px 15px #8989894d;
+    border-top: 2px solid #ffffff4b;
+    border-radius: 1.5rem;
+}
+
+.input-wrapper{
+    width: 100%;
+    padding: .4rem 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-wrapper input:focus {
+    border: 0 none;
+    outline: 0;
+}
+.input-wrapper button{
+    background-color: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+#taskList .taskRemove{
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: transparent;
+    color: var(--color-span);
+}
+
+.checkList{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 5rem;
+    background-color: var(--bg-box);
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 2px #00000049;
+    margin-right: .5rem;
+}
+.checkList:checked{
+    background: var(--color-span);
+}
+
+@media screen and (max-width: 850px){
+    .todoContainer{
+        width: 80%;
+    }
+    h2{
+        font-size: 2.2rem;
+    }
+}

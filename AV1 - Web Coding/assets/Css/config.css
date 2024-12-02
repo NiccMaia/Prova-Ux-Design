@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --font-kumbh: "Kumbh Sans", sans-serif;
+    --font-roboto: "Roboto Condensed", sans-serif;
+    --color-span: rgb(145, 142, 244, 69%);
+    --title: #3c3c3c;
+    --color-text: #898989;
+    --color-text-2: #89898923;
+    --bg-box: #efefef;
+    
+    --text-dark: #bbbbbb;
+    --bg-box-dark: #3C3C3C;
+    --span-dark-mode: #918ef4;
+    --title-text-dark: #dbdbdb;
+
+    --bg-radial: radial-gradient(circle,rgba(228,228,228,1) 38%, rgba(219,219,219,1) 85%, rgba(212,212,212,1) 100%);
+    --bg-dark-mode: radial-gradient(circle, rgb(41, 41, 41) 0%, rgb(36, 36, 36) 50%, rgb(27, 27, 27) 100%); 
+
+    font-size: 62.5%;
+}
